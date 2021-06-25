@@ -29,25 +29,3 @@ public class GaleriaController {
         return "index";
     }
 }
-/*
-@GetMapping("/{nombre}")
-    public String verAlgo(@PathVariable String nombre){
-        RestTemplate apiMarvel = new RestTemplate();
-
-        String apiKeyPublica = "ACA VA LA API KEY PUBLICA";
-        String ts = "1624116042";
-        String apiKeyPrivada = "ACA VA LA API KEY PRIVADA";
-        // string para crear hash:
-        // ts+apiKeyPrivada+apiKeyPublica
-        String previoHash = "ts+apiKeyPrivada+apiKeyPublica";
-        // https://hash-generator.io/md5-hash-generator.php // esto se puede hacer con Java
-        String hashMD5 = "3295a830f5be06053b96a8be9b3c12f9";
-
-        String urlAPI = "https://gateway.marvel.com:443/v1/public/characters?apikey="+apiKeyPublica+
-                "&ts="+ts+"&hash="+hashMD5+"&nameStartsWith="+nombre;
-
-        String algo = apiMarvel.getForObject(urlAPI, String.class);
-        return algo;
-    }
-
-* */
