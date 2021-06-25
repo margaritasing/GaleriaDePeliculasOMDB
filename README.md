@@ -16,10 +16,9 @@
 - ### Ademas se debe hacer un usuario en el sitio web:  https://www.omdbapi.com/_
 
 
-* ### Clase Peli: Donde se establece los atributos que vamos a extraer de la Api( Se utiliza @JsonProperty, 
-      ya que los nombre de los atributos mostrados en la Api estan en Mayuscula.
+* ### Clase Peli: Donde se establece los atributos que vamos a extraer de la Api( Se utiliza @JsonProperty, ya que los nombre de los atributos mostrados en la Api estan en Mayuscula.
 * ### Class SearchResults: Contiene private List<Peli> resultados; La cual contiene la lista de peliculas.
-* ### Controller en Java: @Controller.
+* ### Controller en Java: @Controller, se utiliza el  @GetMapping, donde el metodo utilizado return "index";
 
   
 # _Backend, Ada Itw 2021_
